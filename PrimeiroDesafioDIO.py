@@ -62,11 +62,11 @@ while True:
             print(f"Voce só tem R$ {saldo:.2f}, Voce esta pobre.")
         elif saldo <= 100 or saldo < 200:
                 print(f"Você tem R$ {saldo:.2f}, Uau em ! Ja pode ser pobre premium!")
-        elif saldo >= 201 or saldo == 300 :
+        elif saldo >= 201 or saldo <= 300 :
                 print(f"Você tem R$ {saldo:.2f}, Parabens agora voce foi promovido a PPP (Pobre Premium Plus)")
         elif saldo >= 301 or saldo == 399:
              print(f"Você tem R$ {saldo:.2f}, Que isso em Papai! Jogo do Tigrinho ta rendendo mesmo!")
-        elif saldo >= 400:
+        else:
              print(f"Voce depositou R$ {saldo:.2f}, Cara para de sonegar imposto a PM vai te pegar! ")                     
 
     elif opcao == "q":
